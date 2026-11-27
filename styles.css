@@ -593,10 +593,25 @@ section { padding: 56px 0; border-top: 1px solid var(--border); }
   padding: 10px 0;
   border-bottom: 1px solid var(--border);
   display: flex;
-  justify-content: space-between;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
 }
 .cert-list li span.org { color: var(--text-muted); font-size: 13px; white-space: nowrap; }
+.cert-list .cert-name { flex: 1 1 auto; min-width: 0; }
+.cert-logo {
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+}
+.cert-logo svg { width: 15px; height: 15px; }
+.cert-logo-generic { font-size: 13px; background: var(--accent-soft); border-color: transparent; }
 
 /* ---------- Footer / contact ---------- */
 footer {
