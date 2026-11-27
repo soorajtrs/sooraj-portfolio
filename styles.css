@@ -403,8 +403,18 @@ section { padding: 56px 0; border-top: 1px solid var(--border); }
 .diagram-wrap svg .dnode:nth-of-type(6) { transition-delay: 0.4s; }
 .diagram-wrap svg .dnode:nth-of-type(7) { transition-delay: 0.48s; }
 
+.diagram-wrap svg .loopback,
+.diagram-wrap svg .looplbl {
+  opacity: 0;
+  transition: opacity 0.6s ease 1.9s;
+}
+.diagram-wrap svg.diagram-in .loopback,
+.diagram-wrap svg.diagram-in .looplbl { opacity: 1; }
+
 @media (prefers-reduced-motion: reduce) {
-  .diagram-wrap svg .dnode { opacity: 1; transition: none; }
+  .diagram-wrap svg .dnode,
+  .diagram-wrap svg .loopback,
+  .diagram-wrap svg .looplbl { opacity: 1; transition: none; }
 }
 
 /* ---------- Skills ---------- */

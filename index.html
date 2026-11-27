@@ -304,11 +304,74 @@
           </div>
         </div>
 
-        <div class="card reveal">
+        <div class="card diagram-card reveal">
           <span class="card-tag">Physical AI</span>
           <h3>Agentic Warehouse Robotics</h3>
           <p class="meta">Sim-to-Real with NVIDIA Isaac Sim · 2026</p>
           <p>A warehouse robot capable of delivering boxes across multiple locations, using an agentic harness that combines NVIDIA Isaac Sim skills with custom-built skills to bridge simulation and real-world deployment.</p>
+
+          <div class="diagram-wrap">
+            <svg viewBox="0 0 760 210" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agentic harness: an engineer's goal flows through an AI client to skills and tools, onto a GPU for training, through validators, which loop back to the AI client on any failure">
+              <defs>
+                <marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7fa8d9"/></marker>
+                <marker id="arrow3b" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#e08a52"/></marker>
+              </defs>
+              <style>
+                .box3{fill:#16263a;stroke:#2c4a6e;stroke-width:1.2;}
+                .lbl3{fill:#e8edf4;font-family:Inter,sans-serif;font-size:12.5px;font-weight:600;}
+                .sub3{fill:#9fb0c3;font-family:Inter,sans-serif;font-size:10px;}
+                .sub3A{fill:#fbe4cf;font-family:Inter,sans-serif;font-size:10px;}
+                .edge3{stroke:#7fa8d9;stroke-width:1.5;fill:none;marker-end:url(#arrow3);}
+                .accent3{fill:#e08a52;stroke:#c25a2c;}
+                .loopback{stroke:#e08a52;stroke-width:1.5;fill:none;stroke-dasharray:5,4;marker-end:url(#arrow3b);}
+                .looplbl{fill:#e08a52;font-family:Inter,sans-serif;font-size:10px;font-weight:600;}
+              </style>
+
+              <path d="M678,88 C 678,28 228,28 228,88" class="loopback"/>
+              <text x="453" y="24" class="looplbl" text-anchor="middle">retry on failure</text>
+
+              <g class="dnode">
+                <rect x="10" y="88" width="136" height="62" rx="10" class="box3"/>
+                <text x="78" y="113" class="lbl3" text-anchor="middle">Engineer</text>
+                <text x="78" y="129" class="sub3" text-anchor="middle">describes the</text>
+                <text x="78" y="141" class="sub3" text-anchor="middle">goal</text>
+              </g>
+
+              <g class="dnode">
+                <rect x="160" y="88" width="136" height="62" rx="10" class="box3 accent3"/>
+                <text x="228" y="113" class="lbl3" text-anchor="middle">AI Client</text>
+                <text x="228" y="129" class="sub3A" text-anchor="middle">Claude Code on a</text>
+                <text x="228" y="141" class="sub3A" text-anchor="middle">remote GPU</text>
+              </g>
+
+              <g class="dnode">
+                <rect x="310" y="88" width="136" height="62" rx="10" class="box3"/>
+                <text x="378" y="113" class="lbl3" text-anchor="middle">Skills + Tools</text>
+                <text x="378" y="129" class="sub3" text-anchor="middle">agentic skills,</text>
+                <text x="378" y="141" class="sub3" text-anchor="middle">subagents, scheduler</text>
+              </g>
+
+              <g class="dnode">
+                <rect x="460" y="88" width="136" height="62" rx="10" class="box3 accent3"/>
+                <text x="528" y="113" class="lbl3" text-anchor="middle">GPU Training</text>
+                <text x="528" y="129" class="sub3A" text-anchor="middle">Isaac Lab + Isaac</text>
+                <text x="528" y="141" class="sub3A" text-anchor="middle">Sim, ROS 2</text>
+              </g>
+
+              <g class="dnode">
+                <rect x="610" y="88" width="136" height="62" rx="10" class="box3"/>
+                <text x="678" y="113" class="lbl3" text-anchor="middle">Validators</text>
+                <text x="678" y="129" class="sub3" text-anchor="middle">automated tests,</text>
+                <text x="678" y="141" class="sub3" text-anchor="middle">fail-closed gates</text>
+              </g>
+
+              <path d="M146,119 L160,119" class="edge3 dline"/>
+              <path d="M296,119 L310,119" class="edge3 dline"/>
+              <path d="M446,119 L460,119" class="edge3 dline"/>
+              <path d="M596,119 L610,119" class="edge3 dline"/>
+            </svg>
+          </div>
+
           <div class="impact-row">
             <div class="impact"><div class="num counter" data-prefix="~" data-target="60" data-suffix="%">0%</div><div class="lbl">reduction in engineering effort</div></div>
             <div class="impact"><div class="num counter" data-prefix="~" data-target="60" data-suffix="%">0%</div><div class="lbl">GPU server cost savings</div></div>
