@@ -2,6 +2,16 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+// ---------- Mini-gallery videos ----------
+document.querySelectorAll(".mini-gallery video").forEach((video) => {
+  if (reduceMotion) {
+    video.removeAttribute("autoplay");
+    video.pause();
+  } else {
+    video.play().catch(() => {});
+  }
+});
+
 // ---------- Copy email ----------
 document.querySelectorAll(".copy-btn").forEach((btn) => {
   btn.addEventListener("click", async () => {

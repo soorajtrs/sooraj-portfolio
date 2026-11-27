@@ -464,7 +464,8 @@ section { padding: 56px 0; border-top: 1px solid var(--border); }
   border-radius: 10px;
   overflow: hidden;
 }
-.mini-gallery img {
+.mini-gallery img,
+.mini-gallery video {
   display: block;
   width: 100%;
   height: auto;
