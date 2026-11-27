@@ -54,6 +54,28 @@
 
 html { scroll-behavior: smooth; }
 
+/* ---------- Scroll-reveal + motion ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .hero-photo img { animation: none; }
+}
+
 body {
   margin: 0;
   background: var(--bg);
@@ -142,6 +164,34 @@ a { color: inherit; }
 /* ---------- Hero ---------- */
 .hero {
   padding: 72px 0 48px;
+}
+
+.hero-grid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-copy { flex: 1 1 520px; min-width: 0; }
+
+.hero-photo { flex: 0 0 auto; }
+
+.hero-photo img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 12%;
+  border: 4px solid var(--surface);
+  box-shadow: var(--shadow);
+  display: block;
+  animation: floaty 6s ease-in-out infinite;
+}
+
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
 }
 
 .eyebrow {
@@ -275,6 +325,12 @@ section { padding: 56px 0; border-top: 1px solid var(--border); }
   border-radius: var(--radius);
   padding: 24px;
   box-shadow: var(--shadow);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(16, 36, 62, 0.08), 0 16px 32px rgba(16, 36, 62, 0.1);
 }
 
 .card-tag {
@@ -416,6 +472,8 @@ footer {
 }
 
 @media (max-width: 680px) {
+  .hero-grid { flex-direction: column-reverse; align-items: flex-start; gap: 24px; }
+  .hero-photo img { width: 120px; height: 120px; }
   .nav-links { display: none; }
   .nav-toggle { display: inline-flex; }
   .nav-links.open {
