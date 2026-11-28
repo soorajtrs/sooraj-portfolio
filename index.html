@@ -81,7 +81,7 @@
       <li><a href="#certifications">Certifications</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="experience.html">Full Career History</a></li>
-      <li><a href="innovation.html">Personal Projects &amp; Innovation</a></li>
+      <li><a href="innovation.html">Innovation</a></li>
     </ul>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">◐</button>
   </div>
@@ -358,177 +358,11 @@
           </div>
         </div>
 
-        <div class="card diagram-card reveal">
-          <span class="card-tag">Hackathon · 2nd Prize</span>
-          <h3>Unified Metadata &amp; Knowledge Graph Platform</h3>
-          <p class="meta">Data and AI Hackathon · Aug 2025 · Solo build</p>
-          <div class="card-split">
-            <div class="card-split-text">
-              <p>An end-to-end platform merging business ontology, data lineage, technical metadata, and operational metadata into a single knowledge graph, with a React UI and a chatbot that translates natural language into SQL. Multi-agent orchestration exposed via MCP; token-efficient prompting and caching kept LLM costs low. Built solo using Claude Code — cloud-agnostic and LLM-agnostic by design.</p>
-              <div class="pill-row">
-                <span class="pill">Knowledge graph</span><span class="pill">React</span><span class="pill">MCP</span><span class="pill">NL-to-SQL</span><span class="pill">LLM cost optimization</span>
-              </div>
-            </div>
-            <div class="card-split-diagram">
-              <div class="diagram-wrap">
-                <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Knowledge graph: Customer and Order business entities link to a central fact_orders table, which is populated by the load_orders ETL job and has a revenue_usd column — each link labeled with its relationship">
-                  <defs>
-                    <marker id="arrow5" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7fa8d9"/></marker>
-                  </defs>
-                  <style>
-                    .box5{fill:#16263a;stroke:#2c4a6e;stroke-width:1.2;}
-                    .lbl5{fill:#e8edf4;font-family:Inter,sans-serif;font-size:12px;font-weight:600;}
-                    .sub5{fill:#9fb0c3;font-family:Inter,sans-serif;font-size:9px;}
-                    .edge5{stroke:#7fa8d9;stroke-width:1.3;fill:none;marker-end:url(#arrow5);}
-                    .accent5{fill:#e08a52;stroke:#c25a2c;}
-                    .elbl5{fill:#cfe3ff;font-family:Inter,sans-serif;font-size:9px;font-style:italic;}
-                  </style>
-
-                  <g class="dnode" data-id="n1" tabindex="0" role="button" aria-pressed="false">
-                    <rect x="10" y="10" width="130" height="50" rx="9" class="box5"/>
-                    <text x="75" y="33" class="lbl5" text-anchor="middle">Customer</text>
-                    <text x="75" y="48" class="sub5" text-anchor="middle">business entity</text>
-                  </g>
-
-                  <g class="dnode" data-id="n2" tabindex="0" role="button" aria-pressed="false">
-                    <rect x="180" y="10" width="130" height="50" rx="9" class="box5"/>
-                    <text x="245" y="33" class="lbl5" text-anchor="middle">Order</text>
-                    <text x="245" y="48" class="sub5" text-anchor="middle">business entity</text>
-                  </g>
-
-                  <g class="dnode" data-id="n3" tabindex="0" role="button" aria-pressed="false">
-                    <rect x="88" y="122" width="150" height="58" rx="9" class="box5 accent5"/>
-                    <text x="163" y="147" class="lbl5" text-anchor="middle">fact_orders</text>
-                    <text x="163" y="162" class="sub5" text-anchor="middle" style="fill:#fbe4cf;">table · technical metadata</text>
-                  </g>
-
-                  <g class="dnode" data-id="n4" tabindex="0" role="button" aria-pressed="false">
-                    <rect x="8" y="232" width="140" height="50" rx="9" class="box5"/>
-                    <text x="78" y="255" class="lbl5" text-anchor="middle">load_orders</text>
-                    <text x="78" y="270" class="sub5" text-anchor="middle">ETL job · operational</text>
-                  </g>
-
-                  <g class="dnode" data-id="n5" tabindex="0" role="button" aria-pressed="false">
-                    <rect x="180" y="232" width="130" height="50" rx="9" class="box5"/>
-                    <text x="245" y="255" class="lbl5" text-anchor="middle">revenue_usd</text>
-                    <text x="245" y="270" class="sub5" text-anchor="middle">column</text>
-                  </g>
-
-                  <path d="M140,35 L180,35" data-from="n1" data-to="n2" class="edge5 dline"/>
-                  <text x="160" y="26" class="elbl5" text-anchor="middle">places</text>
-
-                  <path d="M100,60 L120,122" data-from="n1" data-to="n3" class="edge5 dline"/>
-                  <text x="88" y="92" class="elbl5" text-anchor="middle">appears_in</text>
-
-                  <path d="M225,60 L195,122" data-from="n2" data-to="n3" class="edge5 dline"/>
-                  <text x="238" y="92" class="elbl5" text-anchor="middle">stored_in</text>
-
-                  <path d="M100,232 L120,180" data-from="n4" data-to="n3" class="edge5 dline"/>
-                  <text x="76" y="210" class="elbl5" text-anchor="middle">populates</text>
-
-                  <path d="M210,180 L235,232" data-from="n3" data-to="n5" class="edge5 dline"/>
-                  <text x="248" y="210" class="elbl5" text-anchor="middle">has_column</text>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card diagram-card reveal">
-          <span class="card-tag">Physical AI</span>
-          <h3>Agentic Robot Training Pipeline</h3>
-          <p class="meta">Sim-to-Real with NVIDIA Isaac Sim &amp; Isaac Lab · 2026</p>
-          <p>An autonomous mobile robot learns to navigate a large, furnished facility entirely in simulation — modelled in OpenUSD with measured physics — then trains via PPO across 1,024 parallel environments in NVIDIA Isaac Lab before shipping to a real ROS&nbsp;2 stack with SLAM and Nav2 for live, point-to-point delivery missions. The whole pipeline was built with an agentic harness — Claude Code driving a remote GPU through 55 skills and 776 passing tests — improving training goal-reach from 40% to 92% across four diagnosed runs before validating full sim-to-deploy parity.</p>
-
-          <div class="diagram-wrap">
-            <svg viewBox="0 0 864 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Process flow: an agentic harness of Claude Code and skills drives scene and asset creation, physics grounding, training in Isaac Lab, dispatch and control, then validation and deployment">
-              <defs>
-                <marker id="arrow3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7fa8d9"/></marker>
-              </defs>
-              <style>
-                .box3{fill:#16263a;stroke:#2c4a6e;stroke-width:1.2;}
-                .lbl3{fill:#e8edf4;font-family:Inter,sans-serif;font-size:12.5px;font-weight:600;}
-                .sub3{fill:#9fb0c3;font-family:Inter,sans-serif;font-size:10px;}
-                .sub3A{fill:#fbe4cf;font-family:Inter,sans-serif;font-size:10px;}
-                .edge3{stroke:#7fa8d9;stroke-width:1.5;fill:none;marker-end:url(#arrow3);}
-                .accent3{fill:#e08a52;stroke:#c25a2c;}
-              </style>
-
-              <g class="dnode" data-id="n1" tabindex="0" role="button" aria-pressed="false">
-                <rect x="8" y="78" width="128" height="62" rx="10" class="box3 accent3"/>
-                <text x="72" y="103" class="lbl3" text-anchor="middle">Agentic Harness</text>
-                <text x="72" y="119" class="sub3A" text-anchor="middle">Claude Code,</text>
-                <text x="72" y="131" class="sub3A" text-anchor="middle">55 skills</text>
-              </g>
-
-              <g class="dnode" data-id="n2" tabindex="0" role="button" aria-pressed="false">
-                <rect x="152" y="78" width="128" height="62" rx="10" class="box3"/>
-                <text x="216" y="103" class="lbl3" text-anchor="middle">Scene &amp; Assets</text>
-                <text x="216" y="119" class="sub3" text-anchor="middle">OpenUSD facility,</text>
-                <text x="216" y="131" class="sub3" text-anchor="middle">robot rig</text>
-              </g>
-
-              <g class="dnode" data-id="n3" tabindex="0" role="button" aria-pressed="false">
-                <rect x="296" y="78" width="128" height="62" rx="10" class="box3 accent3"/>
-                <text x="360" y="103" class="lbl3" text-anchor="middle">Physics Grounding</text>
-                <text x="360" y="119" class="sub3A" text-anchor="middle">measured footprint,</text>
-                <text x="360" y="131" class="sub3A" text-anchor="middle">PhysX telemetry</text>
-              </g>
-
-              <g class="dnode" data-id="n4" tabindex="0" role="button" aria-pressed="false">
-                <rect x="440" y="78" width="128" height="62" rx="10" class="box3"/>
-                <text x="504" y="103" class="lbl3" text-anchor="middle">Train in Isaac Lab</text>
-                <text x="504" y="119" class="sub3" text-anchor="middle">PPO across 1,024</text>
-                <text x="504" y="131" class="sub3" text-anchor="middle">parallel envs</text>
-              </g>
-
-              <g class="dnode" data-id="n5" tabindex="0" role="button" aria-pressed="false">
-                <rect x="584" y="78" width="128" height="62" rx="10" class="box3 accent3"/>
-                <text x="648" y="103" class="lbl3" text-anchor="middle">Dispatch &amp; Control</text>
-                <text x="648" y="119" class="sub3A" text-anchor="middle">planner path,</text>
-                <text x="648" y="131" class="sub3A" text-anchor="middle">live control</text>
-              </g>
-
-              <g class="dnode" data-id="n6" tabindex="0" role="button" aria-pressed="false">
-                <rect x="728" y="78" width="128" height="62" rx="10" class="box3"/>
-                <text x="792" y="103" class="lbl3" text-anchor="middle">Validate &amp; Deploy</text>
-                <text x="792" y="119" class="sub3" text-anchor="middle">776 tests, ONNX,</text>
-                <text x="792" y="131" class="sub3" text-anchor="middle">ROS 2 + Nav2</text>
-              </g>
-
-              <path d="M136,109 L152,109" data-from="n1" data-to="n2" class="edge3 dline"/>
-              <path d="M280,109 L296,109" data-from="n2" data-to="n3" class="edge3 dline"/>
-              <path d="M424,109 L440,109" data-from="n3" data-to="n4" class="edge3 dline"/>
-              <path d="M568,109 L584,109" data-from="n4" data-to="n5" class="edge3 dline"/>
-              <path d="M712,109 L728,109" data-from="n5" data-to="n6" class="edge3 dline"/>
-              <text x="854" y="191" text-anchor="end" class="diagram-hint">click a node to trace it</text>
-            </svg>
-          </div>
-
-          <div class="mini-gallery">
-            <figure>
-              <video src="assets/robot-training/control_centre_dispatch.mp4" poster="assets/robot-training/control_centre_dispatch_poster.jpg" autoplay muted loop playsinline preload="none" aria-label="Control centre dispatch and live map">
-                <source src="assets/robot-training/control_centre_dispatch.webm" type="video/webm">
-                <source src="assets/robot-training/control_centre_dispatch.mp4" type="video/mp4">
-              </video>
-              <figcaption>Dispatch &amp; live map — floor-plan dispatch with the route driving live.</figcaption>
-            </figure>
-            <figure>
-              <video src="assets/robot-training/mission_delivery.mp4" poster="assets/robot-training/mission_delivery_poster.jpg" autoplay muted loop playsinline preload="none" aria-label="Full delivery mission">
-                <source src="assets/robot-training/mission_delivery.webm" type="video/webm">
-                <source src="assets/robot-training/mission_delivery.mp4" type="video/mp4">
-              </video>
-              <figcaption>Full delivery mission — a complete point-to-point hand-over, end to end.</figcaption>
-            </figure>
-          </div>
-
-          <div class="impact-row">
-            <div class="impact"><div class="num counter" data-prefix="" data-target="92" data-suffix="%">0%</div><div class="lbl">training goal-reach, up from 40%</div></div>
-            <div class="impact"><div class="num counter" data-prefix="" data-target="776" data-suffix="">0</div><div class="lbl">automated tests passing</div></div>
-          </div>
-          <div class="pill-row" style="margin-top:14px;">
-            <span class="pill">Isaac Lab</span><span class="pill">Isaac Sim</span><span class="pill">ROS 2 + Nav2</span><span class="pill">Agentic harness</span>
-          </div>
+        <div class="card reveal">
+          <span class="card-tag">Personal Projects</span>
+          <h3>More side projects — hackathons, robotics &amp; open source</h3>
+          <p>Outside client delivery, I build for the love of it: a 2nd-prize hackathon knowledge-graph platform, a sim-to-real robotics pipeline trained in NVIDIA Isaac Lab, and an open-source local AI companion stack.</p>
+          <a class="btn btn-ghost" href="innovation.html">See Personal Projects &amp; Innovation →</a>
         </div>
 
         <div class="card diagram-card reveal">
