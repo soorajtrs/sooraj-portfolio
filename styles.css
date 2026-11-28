@@ -452,6 +452,13 @@ section { padding: 56px 0; border-top: 1px solid var(--border); }
 
 .diagram-wrap svg { display: block; width: 100%; height: auto; min-width: 560px; }
 
+/* ---------- Side-by-side card (text left, diagram right) ---------- */
+.card-split { display: flex; gap: 28px; align-items: flex-start; }
+.card-split .card-split-text { flex: 1 1 300px; min-width: 0; }
+.card-split .card-split-diagram { flex: 0 1 300px; min-width: 0; align-self: stretch; }
+.card-split .card-split-diagram .diagram-wrap { margin: 0; height: 100%; display: flex; align-items: center; }
+.card-split .card-split-diagram .diagram-wrap svg { min-width: 0; }
+
 .mini-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -684,4 +691,6 @@ footer {
   .skills-grid { grid-template-columns: 1fr; }
   .contact-box { flex-direction: column; align-items: center; }
   .diagram-wrap svg { min-width: 480px; }
+  .card-split { flex-direction: column; }
+  .card-split .card-split-diagram { align-self: stretch; }
 }

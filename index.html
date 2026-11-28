@@ -4,7 +4,9 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Sooraj Thej Radheyam — Data &amp; AI Leader / Forward Deployed Engineer</title>
-<meta name="description" content="Portfolio of Sooraj Thej Radheyam: Data &amp; AI leader and Forward Deployed Engineer building agentic AI, knowledge graphs, and cloud data platforms." />
+<meta name="description" content="Sooraj Thej Radheyam — Data &amp; AI leader, Forward Deployed Engineer, and Solution Architect in London. Agentic AI, Palantir Foundry, knowledge graphs, and cloud data platforms, 16+ years." />
+<meta name="robots" content="index, follow" />
+<meta name="author" content="Sooraj Thej Radheyam" />
 <link rel="canonical" href="https://soorajtrs.github.io/sooraj-portfolio/" />
 
 <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
@@ -30,12 +32,29 @@
   "url": "https://soorajtrs.github.io/sooraj-portfolio/",
   "image": "https://soorajtrs.github.io/sooraj-portfolio/assets/profile.jpg",
   "jobTitle": "Forward Deployed Engineer / Data & AI Leader",
+  "description": "Data & AI leader and Forward Deployed Engineer with 16+ years in cloud architecture, data engineering, and agentic AI delivery.",
   "email": "mailto:sooraj.trs@gmail.com",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "London",
     "addressCountry": "UK"
   },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Accenture"
+  },
+  "knowsAbout": [
+    "Agentic AI",
+    "Palantir Foundry",
+    "Retrieval-Augmented Generation",
+    "Knowledge Graphs",
+    "Data Architecture",
+    "Forward Deployed Engineering",
+    "Google Cloud Platform",
+    "LangChain",
+    "LangGraph",
+    "Data Modernization"
+  ],
   "sameAs": [
     "https://www.linkedin.com/in/sooraj-thej-radheyam/",
     "https://github.com/soorajtrs"
@@ -338,13 +357,79 @@
           </div>
         </div>
 
-        <div class="card reveal">
+        <div class="card diagram-card reveal">
           <span class="card-tag">Hackathon · 2nd Prize</span>
           <h3>Unified Metadata &amp; Knowledge Graph Platform</h3>
           <p class="meta">Data and AI Hackathon · Aug 2025 · Solo build</p>
-          <p>An end-to-end platform merging business ontology, data lineage, technical metadata, and operational metadata into a single knowledge graph, with a React UI and a chatbot that translates natural language into SQL. Multi-agent orchestration exposed via MCP; token-efficient prompting and caching kept LLM costs low. Built solo using Claude Code — cloud-agnostic and LLM-agnostic by design.</p>
-          <div class="pill-row">
-            <span class="pill">Knowledge graph</span><span class="pill">React</span><span class="pill">MCP</span><span class="pill">NL-to-SQL</span><span class="pill">LLM cost optimization</span>
+          <div class="card-split">
+            <div class="card-split-text">
+              <p>An end-to-end platform merging business ontology, data lineage, technical metadata, and operational metadata into a single knowledge graph, with a React UI and a chatbot that translates natural language into SQL. Multi-agent orchestration exposed via MCP; token-efficient prompting and caching kept LLM costs low. Built solo using Claude Code — cloud-agnostic and LLM-agnostic by design.</p>
+              <div class="pill-row">
+                <span class="pill">Knowledge graph</span><span class="pill">React</span><span class="pill">MCP</span><span class="pill">NL-to-SQL</span><span class="pill">LLM cost optimization</span>
+              </div>
+            </div>
+            <div class="card-split-diagram">
+              <div class="diagram-wrap">
+                <svg viewBox="0 0 320 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Knowledge graph: Customer and Order business entities link to a central fact_orders table, which is populated by the load_orders ETL job and has a revenue_usd column — each link labeled with its relationship">
+                  <defs>
+                    <marker id="arrow5" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7fa8d9"/></marker>
+                  </defs>
+                  <style>
+                    .box5{fill:#16263a;stroke:#2c4a6e;stroke-width:1.2;}
+                    .lbl5{fill:#e8edf4;font-family:Inter,sans-serif;font-size:12px;font-weight:600;}
+                    .sub5{fill:#9fb0c3;font-family:Inter,sans-serif;font-size:9px;}
+                    .edge5{stroke:#7fa8d9;stroke-width:1.3;fill:none;marker-end:url(#arrow5);}
+                    .accent5{fill:#e08a52;stroke:#c25a2c;}
+                    .elbl5{fill:#cfe3ff;font-family:Inter,sans-serif;font-size:9px;font-style:italic;}
+                  </style>
+
+                  <g class="dnode" data-id="n1" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="10" y="10" width="130" height="50" rx="9" class="box5"/>
+                    <text x="75" y="33" class="lbl5" text-anchor="middle">Customer</text>
+                    <text x="75" y="48" class="sub5" text-anchor="middle">business entity</text>
+                  </g>
+
+                  <g class="dnode" data-id="n2" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="180" y="10" width="130" height="50" rx="9" class="box5"/>
+                    <text x="245" y="33" class="lbl5" text-anchor="middle">Order</text>
+                    <text x="245" y="48" class="sub5" text-anchor="middle">business entity</text>
+                  </g>
+
+                  <g class="dnode" data-id="n3" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="88" y="122" width="150" height="58" rx="9" class="box5 accent5"/>
+                    <text x="163" y="147" class="lbl5" text-anchor="middle">fact_orders</text>
+                    <text x="163" y="162" class="sub5" text-anchor="middle" style="fill:#fbe4cf;">table · technical metadata</text>
+                  </g>
+
+                  <g class="dnode" data-id="n4" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="8" y="232" width="140" height="50" rx="9" class="box5"/>
+                    <text x="78" y="255" class="lbl5" text-anchor="middle">load_orders</text>
+                    <text x="78" y="270" class="sub5" text-anchor="middle">ETL job · operational</text>
+                  </g>
+
+                  <g class="dnode" data-id="n5" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="180" y="232" width="130" height="50" rx="9" class="box5"/>
+                    <text x="245" y="255" class="lbl5" text-anchor="middle">revenue_usd</text>
+                    <text x="245" y="270" class="sub5" text-anchor="middle">column</text>
+                  </g>
+
+                  <path d="M140,35 L180,35" data-from="n1" data-to="n2" class="edge5 dline"/>
+                  <text x="160" y="26" class="elbl5" text-anchor="middle">places</text>
+
+                  <path d="M100,60 L120,122" data-from="n1" data-to="n3" class="edge5 dline"/>
+                  <text x="88" y="92" class="elbl5" text-anchor="middle">appears_in</text>
+
+                  <path d="M225,60 L195,122" data-from="n2" data-to="n3" class="edge5 dline"/>
+                  <text x="238" y="92" class="elbl5" text-anchor="middle">stored_in</text>
+
+                  <path d="M100,232 L120,180" data-from="n4" data-to="n3" class="edge5 dline"/>
+                  <text x="76" y="210" class="elbl5" text-anchor="middle">populates</text>
+
+                  <path d="M210,180 L235,232" data-from="n3" data-to="n5" class="edge5 dline"/>
+                  <text x="248" y="210" class="elbl5" text-anchor="middle">has_column</text>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -445,17 +530,81 @@
           </div>
         </div>
 
-        <div class="card reveal">
+        <div class="card diagram-card reveal">
           <span class="card-tag">Palantir Foundry</span>
           <h3>Automated DQ Engine</h3>
           <p class="meta">Mar 2026 – Present</p>
-          <p>A Workshop application on Palantir Foundry that automates data-quality checks at scale, letting business users define checks in natural language instead of code.</p>
-          <div class="impact-row">
-            <div class="impact"><div class="num counter" data-prefix="~" data-target="70" data-suffix="%">0%</div><div class="lbl">reduction in engineering effort</div></div>
-            <div class="impact"><div class="num counter" data-prefix="~" data-target="50" data-suffix="%">0%</div><div class="lbl">cost savings</div></div>
-          </div>
-          <div class="pill-row" style="margin-top:14px;">
-            <span class="pill">Palantir Foundry</span><span class="pill">AIP Builder</span><span class="pill">Ontology</span><span class="pill">Workshop</span>
+          <div class="card-split">
+            <div class="card-split-text">
+              <p>A Workshop application on Palantir Foundry that automates data-quality checks at scale, letting business users define checks in natural language instead of code.</p>
+              <div class="impact-row">
+                <div class="impact"><div class="num counter" data-prefix="~" data-target="70" data-suffix="%">0%</div><div class="lbl">reduction in engineering effort</div></div>
+                <div class="impact"><div class="num counter" data-prefix="~" data-target="50" data-suffix="%">0%</div><div class="lbl">cost savings</div></div>
+              </div>
+              <div class="pill-row" style="margin-top:14px;">
+                <span class="pill">Palantir Foundry</span><span class="pill">AIP Builder</span><span class="pill">Ontology</span><span class="pill">Workshop</span>
+              </div>
+            </div>
+            <div class="card-split-diagram">
+              <div class="diagram-wrap">
+                <svg viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Process flow: a Palantir code repository feeds the Workshop app, where a business user's natural-language input is converted by an AIP agent into data-quality rules, executed as a PySpark transform, with metrics exported to Contour and back to the Workshop app">
+                  <defs>
+                    <marker id="arrow4" markerWidth="7" markerHeight="7" refX="5" refY="2.5" orient="auto"><path d="M0,0 L5,2.5 L0,5 Z" fill="#7fa8d9"/></marker>
+                  </defs>
+                  <style>
+                    .box4{fill:#16263a;stroke:#2c4a6e;stroke-width:1.2;}
+                    .lbl4{fill:#e8edf4;font-family:Inter,sans-serif;font-size:12px;font-weight:600;}
+                    .sub4{fill:#9fb0c3;font-family:Inter,sans-serif;font-size:9.5px;}
+                    .subA4{fill:#fbe4cf;font-family:Inter,sans-serif;font-size:9.5px;}
+                    .edge4{stroke:#7fa8d9;stroke-width:1.5;fill:none;marker-end:url(#arrow4);}
+                    .accent4{fill:#e08a52;stroke:#c25a2c;}
+                  </style>
+
+                  <g class="dnode" data-id="n1" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="20" y="8" width="240" height="48" rx="9" class="box4"/>
+                    <text x="140" y="29" class="lbl4" text-anchor="middle">Code Repository</text>
+                    <text x="140" y="44" class="sub4" text-anchor="middle">Palantir Foundry</text>
+                  </g>
+
+                  <g class="dnode" data-id="n2" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="20" y="86" width="240" height="48" rx="9" class="box4"/>
+                    <text x="140" y="107" class="lbl4" text-anchor="middle">Workshop App</text>
+                    <text x="140" y="122" class="sub4" text-anchor="middle">business user input (NL)</text>
+                  </g>
+
+                  <g class="dnode" data-id="n3" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="20" y="164" width="240" height="48" rx="9" class="box4 accent4"/>
+                    <text x="140" y="185" class="lbl4" text-anchor="middle">AIP Agent</text>
+                    <text x="140" y="200" class="subA4" text-anchor="middle">converts input → DQ rules</text>
+                  </g>
+
+                  <g class="dnode" data-id="n4" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="20" y="242" width="240" height="48" rx="9" class="box4"/>
+                    <text x="140" y="263" class="lbl4" text-anchor="middle">PySpark Transform</text>
+                    <text x="140" y="278" class="sub4" text-anchor="middle">executes the DQ rule</text>
+                  </g>
+
+                  <g class="dnode" data-id="n5" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="12" y="330" width="120" height="56" rx="9" class="box4"/>
+                    <text x="72" y="355" class="lbl4" text-anchor="middle">Contour</text>
+                    <text x="72" y="370" class="sub4" text-anchor="middle">DQ metrics</text>
+                  </g>
+
+                  <g class="dnode" data-id="n6" tabindex="0" role="button" aria-pressed="false">
+                    <rect x="148" y="330" width="120" height="56" rx="9" class="box4"/>
+                    <text x="208" y="351" class="lbl4" text-anchor="middle">Workshop App</text>
+                    <text x="208" y="366" class="sub4" text-anchor="middle">results &amp;</text>
+                    <text x="208" y="378" class="sub4" text-anchor="middle">drill-down</text>
+                  </g>
+
+                  <path d="M140,56 L140,86" data-from="n1" data-to="n2" class="edge4 dline"/>
+                  <path d="M140,134 L140,164" data-from="n2" data-to="n3" class="edge4 dline"/>
+                  <path d="M140,212 L140,242" data-from="n3" data-to="n4" class="edge4 dline"/>
+                  <path d="M120,290 Q95,310 75,330" data-from="n4" data-to="n5" class="edge4 dline"/>
+                  <path d="M160,290 Q185,310 205,330" data-from="n4" data-to="n6" class="edge4 dline"/>
+                </svg>
+              </div>
+            </div>
           </div>
         </div>
 
